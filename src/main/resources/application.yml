@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/graduation_project?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  devtools:
+    restart:
+      enabled: true
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+debug: true
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8080
